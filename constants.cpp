@@ -4,6 +4,11 @@ int main(){
     const double E = 2.71;
     const double gravity = 9.8;
     // PI = 3.14; causes error: assignment of read-only variable 'PI
+    /* error: uninitialized 'const x' 
+    const int x;
+    x = 3;
+    cout << x;
+    */
     int radius = 10;
     double circumference = 2 * PI * radius;
     std::cout << circumference << '\n';
